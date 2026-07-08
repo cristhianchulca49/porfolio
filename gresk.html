@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GresK | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">PORTFOLIO</span>
+            <div class="nav-links">
+                <a href="index.html">← Back to home</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-page">
+        <header class="project-header">
+            <p class="project-meta">Final project (3 weeks)</p>
+            <h1 class="project-title">GresK — Musical Event Platform</h1>
+            <p class="project-intro">Designed from my experience as a musician, this tool connects artists with their audience through Spotify recommendations and capacity management. I combine the precision of Clean Architecture with a deep understanding of the musical environment to create scalable, user-oriented backend solutions.</p>
+        </header>
+
+                <div class="video-container">
+            <video controls preload="metadata">
+                <source src="assets/demo-gresk.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+
+        <div class="project-body">
+            <h3>Technical Features and Architecture</h3>
+            <ul class="project-features">
+                <li>REST API development with <strong>Java and Spring Boot</strong>.</li>
+                <li>Authentication system with <strong>JWT</strong> and role-based access control (user, promoter, admin).</li>
+                <li>Ticket purchase implementation with <strong>concurrency control</strong> to prevent overbooking.</li>
+                <li>Integration with external APIs (Spotify, Cloudinary, Mapbox).</li>
+                <li>Persistence with <strong>PostgreSQL</strong> and migration management via <strong>Flyway</strong>.</li>
+                <li>Generation of unique QR codes for ticket validation.</li>
+                <li>Application of <strong>Domain-Driven Design (DDD)</strong> best practices and code organization.</li>
+            </ul>
+
+            <div class="project-tags-large">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">DDD</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">JWT</span>
+                <span class="tag">Spotify API</span>
+            </div>
+
+            <div class="project-action">
+                <a href="https://github.com/GresK-organitation/GresK-backend" target="_blank" class="card-btn">View code on GitHub</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 | Clean Architecture & Open Source</p>
+        </div>
+    </footer>
+
+</body>
+</html>

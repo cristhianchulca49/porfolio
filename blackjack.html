@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack API | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">PORTFOLIO</span>
+            <div class="nav-links">
+                <a href="index.html">← Back to home</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container project-page">
+        <header class="project-header">
+            <p class="project-meta">Mar – Apr 2025 · Bootcamp project (2 weeks)</p>
+            <h1 class="project-title">Blackjack API — Reactive Backend</h1>
+            <p class="project-intro">100% reactive (non-blocking) backend service that allows playing Blackjack, managing statistics, and competing on a global leaderboard. Zero blocking threads thanks to Spring WebFlux and R2DBC.</p>
+        </header>
+
+        <div class="project-body">
+            <h3>Architecture and Technical Details</h3>
+            <ul class="project-features">
+                <li><strong>Hexagonal Architecture (Ports & Adapters)</strong> with three independent bounded contexts: game, player, and ranking.</li>
+                <li>The domain knows nothing of Spring, MongoDB, or any external dependencies — <em>dependency arrows always point inward</em>.</li>
+                <li>Polyglot persistence: <strong>MongoDB</strong> for game state and <strong>MySQL via R2DBC</strong> for profiles and ranking.</li>
+                <li>Reactive testing with WebTestClient and StepVerifier.</li>
+                <li>Dockerization and management via GitHub Projects and Kanban.</li>
+            </ul>
+
+            <div class="project-tags-large">
+                <span class="tag">Java</span>
+                <span class="tag">Spring WebFlux</span>
+                <span class="tag">Hexagonal Architecture</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">R2DBC</span>
+                <span class="tag">Docker</span>
+            </div>
+
+            <div class="project-action">
+                <a href="https://github.com/cristhianchulca49/blackjack-api" target="_blank" class="card-btn">View code on GitHub</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 | Clean Architecture & Open Source</p>
+        </div>
+    </footer>
+
+</body>
+</html>
